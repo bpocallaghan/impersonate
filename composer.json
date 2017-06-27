@@ -1,0 +1,30 @@
+{
+    "name": "bpocallaghan/impersonate",
+    "description": "Debugging a problem and need to login as one of your customers? This allows you to authenticate as any of your customers.",
+    "keywords": [
+        "laravel",
+        "impersonate",
+        "users",
+        "login as",
+        "development",
+        "impersonation"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ben-Piet O'Callaghan",
+            "email": "bpocallaghan@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bpocallaghan\\Impersonate\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    }
+}
