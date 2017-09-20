@@ -42,8 +42,8 @@ class ImpersonateServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('impersonate', function () {
-            return $this->app->make('Bpocallaghan\Impersonate\Impersonate');
+        $this->app->singleton('impersonate', function () {
+            return $this->app->make(Impersonate::class);
         });
     }
 }

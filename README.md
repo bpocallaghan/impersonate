@@ -3,7 +3,7 @@
 Laravel 5 package to enable impersonation.
 Debugging a problem and need to login as one of your customers? This allows you to authenticate as any of your customers.
 
-<br/>See it in action at a [Laravel Admin Starter](https://github.com/bpocallaghan/laravel-admin-starter) project.
+See it in action at a [Laravel Admin Starter](https://github.com/bpocallaghan/laravel-admin-starter) project.
 
 ## Installation
 
@@ -13,6 +13,7 @@ Update your project's `composer.json` file.
 composer require bpocallaghan/impersonate --dev
 ```
 
+`Laravel <5.4 only (Laravel 5.5 has automatic package discovery)`<br/>
 Register the Service Provider in your `config/app` or in your `app/Providers/AppServiceProvider.php` to only allow it for development.
 
 ```php
