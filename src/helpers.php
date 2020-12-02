@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\User;
+
 if (!function_exists('impersonate')) {
     /**
      * Helper impersonate() without facade: Impersonate::login()

@@ -2,9 +2,9 @@
 
 namespace Bpocallaghan\Impersonate;
 
-use App\User;
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\User;
+use Illuminate\Http\Request;
 
 class ImpersonateController extends Controller
 {

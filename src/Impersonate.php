@@ -2,7 +2,7 @@
 
 namespace Bpocallaghan\Impersonate;
 
-use App\User;
+use App\Models\User;
 
 class Impersonate
 {
@@ -13,7 +13,7 @@ class Impersonate
     /**
      * Create a new Impersonate instance.
      */
-    function __construct()
+    public function __construct()
     {
         $this->isActiveKey = config('impersonate.session')['is_active'];
         $this->originalUserKey = config('impersonate.session')['original_user'];
