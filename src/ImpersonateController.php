@@ -10,11 +10,10 @@ class ImpersonateController extends Controller
 {
     /**
      * Impersonate the given user
-     * @param Request $request
-     * @param User    $user
+     *
      * @return \Illuminate\Http\RedirectResponse
      */
-    protected function login(Request $request, User $user)
+    public function login(Request $request, User $user)
     {
         impersonate()->login($user);
 
@@ -29,10 +28,10 @@ class ImpersonateController extends Controller
     /**
      * Logout as the impersonated user
      * Log back in as the original user
-     * @param Request $request
+     *
      * @return \Illuminate\Http\RedirectResponse
      */
-    protected function logout(Request $request)
+    public function logout(Request $request)
     {
         impersonate()->logout();
 
