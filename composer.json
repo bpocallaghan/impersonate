@@ -1,37 +1,43 @@
 {
-    "name": "bpocallaghan/impersonate",
-    "description": "Debugging a problem and need to login as one of your customers? This allows you to authenticate as any of your customers.",
+    "name": "bpocallaghan/sluggable",
+    "description": "Provides a HasSlug trait that will generate a unique slug when saving your Laravel Eloquent model.",
     "keywords": [
         "laravel",
-        "impersonate",
-        "users",
-        "login as",
-        "development",
-        "impersonation"
+        "sluggable",
+        "slug",
+        "eloquent",
+        "unique"
     ],
     "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "authors": [
         {
             "name": "Ben-Piet O'Callaghan",
-            "email": "bpocallaghan@gmail.com"
+            "email": "bpocallaghan@gmail.com",
+            "homepage": "http://bpocallaghan.ie",
+            "role": "Developer"
         }
     ],
     "require": {
-        "php": ">=8.3.0"
+        "php": "^8.2",
+        "illuminate/database": "^12.0",
+        "illuminate/support": "^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.0"
     },
     "autoload": {
         "psr-4": {
-            "Bpocallaghan\\Impersonate\\": "src/"
-        },
-        "files": [
-            "src/helpers.php"
-        ]
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Bpocallaghan\\Impersonate\\ImpersonateServiceProvider"
-            ]
+            "Bpocallaghan\\Sluggable\\": "src"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bpocallaghan\\Sluggable\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
     }
 }
