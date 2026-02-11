@@ -9,7 +9,7 @@ if (!function_exists('impersonate')) {
      * @param User|null $user
      * @return \Illuminate\Foundation\Application|mixed
      */
-    function impersonate(User $user = null)
+    function impersonate(?User $user = null)
     {
         $impersonate = app('impersonate');
 
